@@ -1,0 +1,13 @@
+<!-- <app-dashboard></app-dashboard> -->
+
+<div id="maindiv">
+    <ul *ngFor="let link of links">
+
+        <li>
+            <a [routerLink]="link">{{link}}</a>
+        </li>
+    </ul>
+
+</div>
+
+<router-outlet></router-outlet>

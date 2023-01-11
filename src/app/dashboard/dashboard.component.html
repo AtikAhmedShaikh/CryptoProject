@@ -1,0 +1,7 @@
+<div *ngIf="isReady">
+    <h1>Cryptocurrencies by volume (last 24 H)</h1>
+    <div id="crypto-container" *ngFor="let data of Data">
+        <span class="left">{{data.FROMSYMBOL}}</span>
+        <span class="right">$ {{data.PRICE}}</span>
+    </div>
+</div>
